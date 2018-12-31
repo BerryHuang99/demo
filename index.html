@@ -1,37 +1,46 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><title>御医养成记</title><style>#root,body,html{height:100%;width:100%;overflow:hidden}.music-button{width:35px;height:35px;position:fixed;top:15px;right:15px}.music-begin{background:url("data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD2klEQVRoQ+2ZXciURRiGrzuhH5EiLFJBiv4h0DxSLI9UqCAq+oN+KALDIJWgPLCy/IcSjCxCKAqhTkqIqEQoCQqiIiz0QCGRTCkLgrCC DuqOZ5n3Y/Z1d99dd99vV9g5+mZn3pn7mmeeZ56ZT5zhRWe4fsYAw7bg2AJjC/S5ArVvIdvXAauB m4HzgQ2SNvWpe+Lz2gBsXwhsBJYDZ5UEb5e0chAQAwewHWIfBTYDAdGuzJG0v1+IgQLYng+8AcS2 qSpPSdpa1amqfSAAtmcBLwD3V02YtW+RtKaH/i279gVg+2zgCWAtMLVHMfUC2F4C3Fgh6jbg+h6F F903S3q63be2XwbuBHZIWt+u3ykWsD0b+BCYc5rCuv1sk6RnWnW2fQ1wMGtbKWl7q75NALbPA/YB MUDdpRPAOUBEqKuSiH+BJZI+K4sqA0T421G38jT+RknPxt8pCPwh6a9ibttXA98C09JvRwJIUsBM lDLAbuCmSQJoWMD2A8BbwN/A7ZL2ZhDhY+9neh6X9GongMPA5ZME0LCA7Y+AW9KcvwNzJR3LID4B Fqf6z5IiZLe1wHGgqUONMAXAKuClbJ6dkh7KAG4Avsja50v6uqiXt9CkAyQf+AC4NYn6D7i0sILt 0HgCuLjsO1EfFYAQdxQ4N4lsCpu2dwIPprY9kib8dJgAkVbHCd4otj9OKXdUd0m6K2uLlKNIwb+X NHF4jhJApN7FyfylpIUZwMPAm6l+QtKMUfCBsgUiXWicC0AZ4JGU5Ubbr5IuGUWAt4H7krB3Jd2T WSAsExaKMnpbyHakDj9lkWaFpFcygNyJd0sqzo2hRqH1kp5LDpxvnwijl0kKoMLBfwMuStWmLHaY TtwAsL0U2JOF9PJBFin95wUMsEDSV+184AfgiqxznX8WAOVUYp6kOBOK1Y9TOE7jKL9ImpmLGmYy VwCsAOLychK4Q9KnmfhyMtfkG9FvmOl07gMLgAOS/szERzr9TXpLip9/jN1RlU7HUf7dJF1o1kl6 vtUeTVHpAHBlag/HXpqn2i19IEWE6cBrwN11OgDQCSBW/1A2f3dXylyw7cjBF3WAiLAWCVY8F55O aQuQFvK9uEZGqt3OUqf4QK8qbMeWezLlMEUm2e0wHQG6HaSvd6HM4eIl40Xg3m4n7rSFehhjsP9i sh3x+nXg2i5ErJIU4bOvMhALlHxnCvBYSr4u6KAuXhji4OyrDBwg21bh5HEJWVY+b4B3JPXyjtoW sjaADGQuEE8hcUGJd55dwDZJ //S19Onj2gEGIbLTGGOAule4avyxBapWqO72sQXqXuGq8f8H9Kx0QL2ImHkAAAAASUVORK5CYII=") no-repeat;background-size:100% 100%}.music-stop{background:url("data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACmklEQVRoQ+2ZzatNYRTGf4/PQqTMCBkZ+kgGvj/KFQMMLspIblJmhgwxYYailIGJMlBmvg3uVUrK3D9gYoDCxKOlfW7nbnvfs/dpn/1R 9x2evd59nmc9611r7fWKji91HD9zBJpWcE6BPAVsrwW+SPo9SpUqV8D2KuAaMAFMStrdCQK25wMX gKvAih5oSZU7qd8hlbzc9g7gPrAx7e1WE7C9GrgJnMoLk1YSsL0YuARcBpbMFuOtI2D7KHAbWFfk cI6cgO01wD3gILCoCKgyNnUQeAXsLwOqjG0dBKLQVO752tKobZfxaFnbOhSonYDtZcA48BV4KulP lmNszwOOA8uBR5J+/ldn6lbAdoD5BKxPwEwChyX96AdnO6r5M2B78vtnYKukbzMqcQMELgK3Up58 H1mwRyIB/wbYnLI7K+lB0wRORjhkhMw/EkD0VFngY8u4pMdNE4i4jtS9N4PEB2ABsCnj2QvgkKQZ Z1Z1h1AAsx3tR8T3zoJZ7TVwRNKvxg9xD0AJErng412NKJAi8RbYlqPEO+BAluenC2UTIdRHIOpB eLh7BJJi9rIvz+cdh/aFUBL/AaxXpAad5fYc4qQ9CEB7MlBHzEeGykqjz4GxxtOo7TPAw5xCFm39 wlkK2QlJT5ouZOeBu0O2EhOSYngwvWpPo7ZXAh/7mrmpJDSKNHNbJH1vlEBSiZcC0RMNaqejLzrW qnZ6ULop+zxCqPOflJHS9pVlXtS+jk/KmCL3xirRyla6Rk6gLFrbY8AdYEORva0jkGSRGMPEaPFK 50aL/V5Phrs3gNN5arRSgTTYzo7XU2p094IjRSSumK4D54ApSbuKHPZhbSq5ocn6885e8g3ryWH3 jUyBYQGV3TdHoKzHqrbvvAJ/AWVaIECMMySeAAAAAElFTkSuQmCC") no-repeat;background-size:100% 100%}</style><link href="./static/css/1.a05ff2b5.chunk.css" rel="stylesheet"><link href="./static/css/main.dfda02a5.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><audio id="bgMusic" src="static/media/bg.mp3" loop="loop"></audio><audio id="btnMusic" src="static/media/btn.mp3"></audio><div id="musicButton" class="music-button music-stop"></div><div id="root"></div><script>// 初始配置
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1,user-scalable=0"/><meta name="theme-color" content="#000000"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src *; child-src 'none';"/><title>御医养成记</title><style>#root,body,html{height:100%;width:100%;overflow:hidden}.music-button{width:25px;height:30px;position:fixed;top:15px;right:15px;z-index:1}.music-begin{background:url("data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD2klEQVRoQ+2ZXciURRiGrzuhH5EiLFJBiv4h0DxSLI9UqCAq+oN+KALDIJWgPLCy/IcSjCxCKAqhTkqIqEQoCQqiIiz0QCGRTCkLgrCC DuqOZ5n3Y/Z1d99dd99vV9g5+mZn3pn7mmeeZ56ZT5zhRWe4fsYAw7bg2AJjC/S5ArVvIdvXAauB m4HzgQ2SNvWpe+Lz2gBsXwhsBJYDZ5UEb5e0chAQAwewHWIfBTYDAdGuzJG0v1+IgQLYng+8AcS2 qSpPSdpa1amqfSAAtmcBLwD3V02YtW+RtKaH/i279gVg+2zgCWAtMLVHMfUC2F4C3Fgh6jbg+h6F F903S3q63be2XwbuBHZIWt+u3ykWsD0b+BCYc5rCuv1sk6RnWnW2fQ1wMGtbKWl7q75NALbPA/YB MUDdpRPAOUBEqKuSiH+BJZI+K4sqA0T421G38jT+RknPxt8pCPwh6a9ibttXA98C09JvRwJIUsBM lDLAbuCmSQJoWMD2A8BbwN/A7ZL2ZhDhY+9neh6X9GongMPA5ZME0LCA7Y+AW9KcvwNzJR3LID4B Fqf6z5IiZLe1wHGgqUONMAXAKuClbJ6dkh7KAG4Avsja50v6uqiXt9CkAyQf+AC4NYn6D7i0sILt 0HgCuLjsO1EfFYAQdxQ4N4lsCpu2dwIPprY9kib8dJgAkVbHCd4otj9OKXdUd0m6K2uLlKNIwb+X NHF4jhJApN7FyfylpIUZwMPAm6l+QtKMUfCBsgUiXWicC0AZ4JGU5Ubbr5IuGUWAt4H7krB3Jd2T WSAsExaKMnpbyHakDj9lkWaFpFcygNyJd0sqzo2hRqH1kp5LDpxvnwijl0kKoMLBfwMuStWmLHaY TtwAsL0U2JOF9PJBFin95wUMsEDSV+184AfgiqxznX8WAOVUYp6kOBOK1Y9TOE7jKL9ImpmLGmYy VwCsAOLychK4Q9KnmfhyMtfkG9FvmOl07gMLgAOS/szERzr9TXpLip9/jN1RlU7HUf7dJF1o1kl6 vtUeTVHpAHBlag/HXpqn2i19IEWE6cBrwN11OgDQCSBW/1A2f3dXylyw7cjBF3WAiLAWCVY8F55O aQuQFvK9uEZGqt3OUqf4QK8qbMeWezLlMEUm2e0wHQG6HaSvd6HM4eIl40Xg3m4n7rSFehhjsP9i sh3x+nXg2i5ErJIU4bOvMhALlHxnCvBYSr4u6KAuXhji4OyrDBwg21bh5HEJWVY+b4B3JPXyjtoW sjaADGQuEE8hcUGJd55dwDZJ //S19Onj2gEGIbLTGGOAule4avyxBapWqO72sQXqXuGq8f8H9Kx0QL2ImHkAAAAASUVORK5CYII=") no-repeat;background-size:100% 100%}.music-stop{background:url("data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACmklEQVRoQ+2ZzatNYRTGf4/PQqTMCBkZ+kgGvj/KFQMMLspIblJmhgwxYYailIGJMlBmvg3uVUrK3D9gYoDCxKOlfW7nbnvfs/dpn/1R 9x2evd59nmc9611r7fWKji91HD9zBJpWcE6BPAVsrwW+SPo9SpUqV8D2KuAaMAFMStrdCQK25wMX gKvAih5oSZU7qd8hlbzc9g7gPrAx7e1WE7C9GrgJnMoLk1YSsL0YuARcBpbMFuOtI2D7KHAbWFfk cI6cgO01wD3gILCoCKgyNnUQeAXsLwOqjG0dBKLQVO752tKobZfxaFnbOhSonYDtZcA48BV4KulP lmNszwOOA8uBR5J+/ldn6lbAdoD5BKxPwEwChyX96AdnO6r5M2B78vtnYKukbzMqcQMELgK3Up58 H1mwRyIB/wbYnLI7K+lB0wRORjhkhMw/EkD0VFngY8u4pMdNE4i4jtS9N4PEB2ABsCnj2QvgkKQZ Z1Z1h1AAsx3tR8T3zoJZ7TVwRNKvxg9xD0AJErng412NKJAi8RbYlqPEO+BAluenC2UTIdRHIOpB eLh7BJJi9rIvz+cdh/aFUBL/AaxXpAad5fYc4qQ9CEB7MlBHzEeGykqjz4GxxtOo7TPAw5xCFm39 wlkK2QlJT5ouZOeBu0O2EhOSYngwvWpPo7ZXAh/7mrmpJDSKNHNbJH1vlEBSiZcC0RMNaqejLzrW qnZ6ULop+zxCqPOflJHS9pVlXtS+jk/KmCL3xirRyla6Rk6gLFrbY8AdYEORva0jkGSRGMPEaPFK 50aL/V5Phrs3gNN5arRSgTTYzo7XU2p094IjRSSumK4D54ApSbuKHPZhbSq5ocn6885e8g3ryWH3 jUyBYQGV3TdHoKzHqrbvvAJ/AWVaIECMMySeAAAAAElFTkSuQmCC") no-repeat;background-size:100% 100%}</style><link href="./static/css/1.7fa49dbf.chunk.css" rel="stylesheet"><link href="./static/css/main.e0f5b91f.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><audio id="bgMusic" src="static/media/bg.mp3" loop="loop" preload="auto"></audio><audio id="btnMusic" src="static/media/btn.mp3" preload="auto"></audio><div id="musicButton" class="music-button music-stop"></div><div id="root"></div><script>// 初始配置
     window.__PAGE_DATA__ = {
-        CLASS_SCORE: 5, // 完成课程加分
-        ANSWER_SCORE: 15, // 答题加分
-        PROBLEM_TYPE: 0, // 悬壶济世题库类型：0, 1, 2, 3分别代表
+        LEVEL_SCORE: [
+          1000,
+          1500,
+        ],
+        SCORE: 0,
         DOCTOR_TYPE: 0, // 用户类型：0御医，1神医，2学童，初始为0，仅用于初始化和测试，登录后修改
+        STUDY_TYPE: 0,
         IMAGES: [
-          'static/images/background-2.jpg',
-          'static/images/background-3.jpg',
-          'static/images/bg-1.jpg',
-          'static/images/bg-2.jpg',
-          'static/images/bg-3.jpg',
-          'static/images/text-wrap.png',
-          'static/images/text-wrap2.png',
-          'static/images/doctor-1.png',
-          'static/images/doctor-2.png',
-          'static/images/doctor-3.png',
-          'static/images/doctor-1l.png',
-          'static/images/doctor-2l.png',
-          'static/images/doctor-3l.png',
-          'static/images/p-1.png',
-          'static/images/p-2.png',
-          'static/images/p-3.png',
-          'static/images/p-4.png',
-          'static/images/p-1m.png',
-          'static/images/p-2m.png',
-          'static/images/p-3m.png',
-          'static/images/p-4m.png',
+          'static/images/choice-1.jpg',
+          'static/images/choice-2.jpg',
+          'static/images/choice-3.jpg',
+          'static/images/answer-1.jpg',
+          'static/images/answer-2.jpg',
+          'static/images/answer-3.jpg',
           'static/images/levelbg-1.jpg',
           'static/images/levelbg-2.jpg',
           'static/images/levelbg-3.jpg',
-          'static/images/levelWrap1.png',
-          'static/images/levelWrap2.png',
-          'static/images/levelWrap3.png',
+          'static/images/b1-begin1.jpg',
+          'static/images/b1-begin2.jpg',
+          'static/images/b1-begin3.jpg',
+          'static/images/b2-begin1.jpg',
+          'static/images/b2-begin2.jpg',
+          'static/images/b2-begin3.jpg',
+          'static/images/b3-begin1.jpg',
+          'static/images/b3-begin2.jpg',
+          'static/images/b3-begin3.jpg',
+          'static/images/b4-begin1.jpg',
+          'static/images/b4-begin2.jpg',
+          'static/images/b4-begin3.jpg',
+          'static/images/b1-ques1.jpg',
+          'static/images/b1-ques2.jpg',
+          'static/images/b1-ques3.jpg',
+          'static/images/b2-ques1.jpg',
+          'static/images/b2-ques2.jpg',
+          'static/images/b2-ques3.jpg',
+          'static/images/b3-ques1.jpg',
+          'static/images/b3-ques2.jpg',
+          'static/images/b3-ques3.jpg',
+          'static/images/b4-ques1.jpg',
+          'static/images/b4-ques2.jpg',
+          'static/images/b4-ques3.jpg',
         ], // 需要预加载的图片路径
     };
 
@@ -74,4 +83,4 @@
           $bgMusic.pause();
         }
       }
-    });</script><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="./";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="./static/js/1.0f0af311.chunk.js"></script><script src="./static/js/main.f37b61cd.chunk.js"></script></body></html>
+    });</script><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="./";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="./static/js/1.7ae60b4e.chunk.js"></script><script src="./static/js/main.f928ae6f.chunk.js"></script></body></html>
